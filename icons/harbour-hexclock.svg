@@ -14,6 +14,7 @@
 			<dc:title>Hexclock Icon</dc:title>
 			<cc:license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/3.0/" />
 			<dc:date>2016-03-26</dc:date>
+			<!-- updated 2016-04-02 -->
 			<dc:creator>
 				<cc:Agent>
 					<dc:title>Robert Bienert</dc:title>
@@ -61,7 +62,8 @@ text {
 </defs>
 <g>
 	<path d="M128,16 a112,112 0 0 1 0,224 a112,112 0 0 1 0,-224" stroke="url(#zeitstrahl)" stroke-width="32" fill="url(#radGrad)"/>
-	<circle id="frame" cx="128" cy="128" r="124" fill="none" stroke="white" stroke-width="2" />
+	<!-- previous version: r=124 stroke-width=2 -->
+	<circle id="frame" cx="128" cy="128" r="120" fill="none" stroke="white" stroke-width="4" />
 	<rect id="h03" x="120" y="120" width="120" height="16" fill="#032616" rx="8" ry="8" />
 	<rect id="m25" x="124" y="124" width="8" height="120" fill="#032616" rx="4" ry="4" transform="rotate(-30)translate(-82,43)"/>
 	<circle cx="128" cy="128" r="2" fill="white" id="circle32" />
