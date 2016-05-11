@@ -49,5 +49,6 @@ DISTFILES += \
     qml/types/PauseButton.qml \
     qml/types/SailText.qml \
     rpm/harbour-hexclock.changes \
-    qml/types/TextWithLink.qml
+    qml/types/TextWithLink.qml \
+    qml/Settings.js
 

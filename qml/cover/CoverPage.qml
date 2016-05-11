@@ -8,13 +8,14 @@
 import QtQuick 2.0
 import Sailfish.Silica 1.0
 import "../types"
+import "../Settings.js" as Settings
 
 CoverBackground {
     ColourBox {
         id: colourBox
         y: Theme.paddingLarge
         labelSize: Theme.fontSizeMedium
-        timerInterval: 1000
+        timerInterval: Settings.time('CoverPage', 1000)
         // update the colour only when we are active:
         timerAutostart: parent.status == Cover.Active
     }

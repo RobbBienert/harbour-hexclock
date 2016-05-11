@@ -9,6 +9,7 @@ import QtQuick 2.0
 import Sailfish.Silica 1.0
 import "../types"
 import "../LoopModel.js" as LoopModel
+import "../Settings.js" as Settings
 
 Page {
     id: page
@@ -27,7 +28,7 @@ Page {
 
             TextField {
                 id: interval
-                placeholderText: "100"
+                placeholderText: Settings.time('Simulation', 100).toString()
                 text: placeholderText
                 width: parent.width / 2
                 horizontalAlignment: Text.AlignLeft
@@ -41,6 +42,8 @@ Page {
                     if (toggled) {
                         colourBox.timerInterval = parseInt(interval.text)
                         colourBox.timerAutostart = true
+
+                        Settings.setTime('Simulation', colourBox.timerInterval, 100)
                     }
                     else {
                         colourBox.timerAutostart = false

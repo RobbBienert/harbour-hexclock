@@ -10,11 +10,12 @@ import Sailfish.Silica 1.0
 import "../types"
 import "../datetimecolour.js" as DateTimeColour
 import "../DateTimeModel.js" as DateTimeModel
+import "../Settings.js" as Settings
 
 
 Rectangle {
     // read-write properties
-    property int timerInterval: 1000
+    property int timerInterval: Settings.time('ColourBox', 1000)
     property bool timerAutostart: true
     property var model: new DateTimeModel.DateTimeModel()
     property var timeLabel: null
