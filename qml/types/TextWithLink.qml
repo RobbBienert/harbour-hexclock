@@ -1,9 +1,7 @@
 import QtQuick 2.0
-import Sailfish.Silica 1.0
 
 /**
- * Sailfish.Silica.Label with some padding and word wrapping
- *
+ * a SailText implementing hyperlinks
  *
  * Project: various SailfishOS apps
  * Copyright (C) 2016 Robert Bienert
@@ -22,8 +20,8 @@ import Sailfish.Silica 1.0
  * for more details.
  */
 
-Label {
-    x: Theme.paddingMedium
-    width: parent.width - 2*Theme.paddingMedium
-    wrapMode: Text.WordWrap
+SailText {
+    textFormat: Text.StyledText
+    onLinkActivated: Qt.openUrlExternally(link)
 }
+

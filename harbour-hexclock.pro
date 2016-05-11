@@ -48,5 +48,6 @@ DISTFILES += \
     qml/types/StartStopButton.qml \
     qml/types/PauseButton.qml \
     qml/types/SailText.qml \
-    rpm/harbour-hexclock.changes
+    rpm/harbour-hexclock.changes \
+    qml/types/TextWithLink.qml
 
