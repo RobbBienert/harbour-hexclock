@@ -13,7 +13,10 @@ CoverBackground {
     ColourBox {
         id: colourBox
         y: Theme.paddingLarge
-        timerInterval: 2000
+        labelSize: Theme.fontSizeMedium
+        timerInterval: 1000
+        // update the colour only when we are active:
+        timerAutostart: parent.status == Cover.Active
     }
 
     CoverActionList {

@@ -19,6 +19,7 @@ Rectangle {
     property var model: new DateTimeModel.DateTimeModel()
     property var timeLabel: null
     property var parentPage: parent
+    property int labelSize: Theme.fontSizeHuge
 
     // read-only properties
     property string tmplTime: qsTr("Time %1 …")
@@ -29,6 +30,8 @@ Rectangle {
     x: Theme.paddingLarge
     radius: Theme.paddingLarge
     color: DateTimeColour.colour()
+    border.width: Theme.paddingSmall
+    border.color: Theme.highlightColor
     // adjust size to square fitting onto page
     anchors.horizontalCenter: parentPage.isPortrait ? parent.horizontalCenter : undefined
     //anchors.horizontalCenter: parent.horizontalCenter
@@ -41,7 +44,7 @@ Rectangle {
         x: Theme.paddingLarge
         color: "white"
         anchors.centerIn: parent
-        font.pixelSize: Theme.fontSizeExtraLarge
+        font.pixelSize: labelSize
         text: DateTimeColour.colour()
     }
 
