@@ -27,7 +27,7 @@ Button {
     property string textToggled: "active"
     property string textUnToggled: "inactive"
 
-    text: textToggled
+    text: toggled ? textUnToggled : textToggled
 
     onClicked: {
         if (toggled) {

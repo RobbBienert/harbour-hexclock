@@ -15,7 +15,7 @@ import "../Settings.js" as Settings
 
 Rectangle {
     // read-write properties
-    property int timerInterval: Settings.time('ColourBox', 1000)
+    property int timerInterval: Settings.time(Settings.MainName, Settings.MainInt)
     property bool timerAutostart: true
     property var model: new DateTimeModel.DateTimeModel()
     property var timeLabel: null

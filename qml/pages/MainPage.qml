@@ -27,6 +27,10 @@ Page {
                 text: qsTr("Simulation")
                 onClicked: pageStack.push(Qt.resolvedUrl("TestPage.qml"))
             }
+            MenuItem {
+                text: qsTr("Preferences")
+                onClicked: pageStack.push(Qt.resolvedUrl("PreferencesDialog.qml"))
+            }
         }
 
         // Tell SilicaFlickable the height of its content.

@@ -34,16 +34,30 @@ Page {
                 horizontalAlignment: Text.AlignLeft
                 inputMethodHints: Qt.ImhDigitsOnly
                 label: qsTr("Timer Interval/ms")
+                EnterKey.enabled: text.length > 0
+                EnterKey.iconSource: "image://theme/icon-m-enter-accept"
+                EnterKey.onClicked: enterClicked()
+
+                function enterClicked() {
+                    var newInterval = parseInt(text);
+                    colourBox.timerInterval = newInterval;
+                    colourBox.timerAutostart = true;
+                    Settings.setTime(Settings.SimulName, newInterval);
+                    btnStart.toggled = true;
+                }
             }
             StartStopButton {
                 id: btnStart
                 onClicked: {
                     // toggled is set in the base class!
                     if (toggled) {
+                        interval.enterClicked()
+                        /*
                         colourBox.timerInterval = parseInt(interval.text)
                         colourBox.timerAutostart = true
 
                         Settings.setTime('Simulation', colourBox.timerInterval, 100)
+                        */
                     }
                     else {
                         colourBox.timerAutostart = false

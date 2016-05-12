@@ -22,6 +22,15 @@
  * for more details.
  */
 
+// constants
+var MainName = 'ColourBox';
+var MainInt = 1000;
+var CoverName = 'CoverPage';
+var CoverInt = 1000;
+var SimulName = 'Simulation';
+var SimulInt = 100;
+
+// database connection
 var _db = Sql.LocalStorage.openDatabaseSync("HexClock", "1.0", "HexClock Settings");
 
 // init
@@ -35,6 +44,12 @@ function setTime(name, interval) {
         var res = tx.executeSql('UPDATE times SET interval=? WHERE name=?',
                       [interval, name]);
     });
+}
+
+
+function setTimes(times) {
+    for (var i = 0; i < times.length; ++i)
+        setTime(times[i][0], times[i][1]);
 }
 
 
@@ -53,6 +68,11 @@ function time(name, defaultInterval) {
                       [name, defaultInterval]);
     });
     return defaultInterval;
+}
+
+
+function timeS(name, defaultInterval) {
+    return time(name, defaultInterval) / 1000;
 }
 
 

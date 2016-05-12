@@ -45,6 +45,10 @@
         <source>… as Colour:</source>
         <translation>… als Farbe:</translation>
     </message>
+    <message>
+        <source>Preferences</source>
+        <translation>Einstellungen</translation>
+    </message>
 </context>
 <context>
     <name>PauseButton</name>
@@ -55,6 +59,37 @@
     <message>
         <source>Continue</source>
         <translation>Weiter</translation>
+    </message>
+</context>
+<context>
+    <name>PreferencesDialog</name>
+    <message>
+        <source>Preferences</source>
+        <translation>Einstellungen</translation>
+    </message>
+    <message>
+        <source>Main Page</source>
+        <translation>App Hauptseite</translation>
+    </message>
+    <message>
+        <source>App Cover</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Refresh Intervals</source>
+        <translation>Aktualisiere Zeit</translation>
+    </message>
+    <message>
+        <source>time in seconds</source>
+        <translation>Zeit in Sekunden</translation>
+    </message>
+    <message>
+        <source>Simulation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>time in miliseconds</source>
+        <translation>Zeit in Millisekunden</translation>
     </message>
 </context>
 <context>

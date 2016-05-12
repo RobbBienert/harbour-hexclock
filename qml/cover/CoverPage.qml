@@ -15,7 +15,7 @@ CoverBackground {
         id: colourBox
         y: Theme.paddingLarge
         labelSize: Theme.fontSizeMedium
-        timerInterval: Settings.time('CoverPage', 1000)
+        timerInterval: Settings.time(Settings.CoverName, Settings.CoverInt)
         // update the colour only when we are active:
         timerAutostart: parent.status == Cover.Active
     }

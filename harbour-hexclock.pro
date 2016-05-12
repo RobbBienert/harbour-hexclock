@@ -50,5 +50,6 @@ DISTFILES += \
     qml/types/SailText.qml \
     rpm/harbour-hexclock.changes \
     qml/types/TextWithLink.qml \
-    qml/Settings.js
+    qml/Settings.js \
+    qml/pages/PreferencesDialog.qml
 

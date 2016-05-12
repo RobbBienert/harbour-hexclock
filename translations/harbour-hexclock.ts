@@ -45,6 +45,10 @@
         <source>… as Colour:</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Preferences</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>PauseButton</name>
@@ -54,6 +58,37 @@
     </message>
     <message>
         <source>Continue</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>PreferencesDialog</name>
+    <message>
+        <source>Preferences</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Main Page</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>App Cover</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Refresh Intervals</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>time in seconds</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Simulation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>time in miliseconds</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
