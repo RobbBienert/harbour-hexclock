@@ -55,7 +55,8 @@ Dialog {
             }
             Grid {
                 id: rowRefresh
-                width: parent.width
+                width: parent.width - 2*parent.spacing
+                anchors.horizontalCenter: parent.horizontalCenter
                 columns: 2
 
                 Label {

@@ -8,6 +8,7 @@
 import QtQuick 2.0
 import Sailfish.Silica 1.0
 import "../types"
+import "../Settings.js" as Settings
 
 
 Page {
@@ -68,5 +69,10 @@ Page {
                 }
             }
         }
+    }
+
+    onStatusChanged: {
+        if (PageStatus.Activating == status)
+            colourBox.timerInterval = Settings.time(Settings.MainName, Settings.MainInt)
     }
 }

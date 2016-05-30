@@ -31,5 +31,13 @@ CoverBackground {
                 triggered = !triggered
             }
         }
+        CoverAction {
+            iconSource: 'image://theme/icon-s-setting'
+            onTriggered: {
+                pageStack.push(Qt.resolvedUrl("../pages/PreferencesDialog.qml"))
+                pageStack.completeAnimation()
+                app.activate()
+            }
+        }
     }
 }

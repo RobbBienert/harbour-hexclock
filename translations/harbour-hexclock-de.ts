@@ -34,20 +34,20 @@
 <context>
     <name>MainPage</name>
     <message>
-        <source>Simulation</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>About …</source>
         <translation>Über …</translation>
     </message>
     <message>
-        <source>… as Colour:</source>
-        <translation>… als Farbe:</translation>
+        <source>Simulation</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Preferences</source>
         <translation>Einstellungen</translation>
+    </message>
+    <message>
+        <source>… as Colour:</source>
+        <translation>… als Farbe</translation>
     </message>
 </context>
 <context>

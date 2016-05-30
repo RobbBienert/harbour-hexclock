@@ -41,6 +41,11 @@ Page {
                 title: qsTr("About Hexclock")
             }
 
+            SailText {
+                id: version
+                text: 'Hexclock Version 0.2'
+            }
+
             TextWithLink {
                 id: about
                 text: qsTr("displaying the time as colour<br>idea from") + " <a href=\"http://www.kraftfuttermischwerk.de/blogg/die-uhrzeit-als-hexadezimale-farbdefinition/\">" + "<font color=\"" + Theme.highlightColor + "\">kraftfuttermischwerk.de</font></a>"
