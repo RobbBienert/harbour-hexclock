@@ -34,4 +34,4 @@ You should have received a copy of the GNU General Public License along with thi
 This app is published in binary format to
 
  * the Jolla harbour (access from the *Store* app on your mobile device)
- * [OpenRepos](https://openrepos.net/content/robbbienert/iban-checker)
+ * [OpenRepos](https://openrepos.net/content/robbbienert/hexclock)
